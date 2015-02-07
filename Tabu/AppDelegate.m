@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FMSWelcomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    FMSWelcomeViewController *welcomeViewController = [[FMSWelcomeViewController alloc]init];
+    self.window.rootViewController = welcomeViewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
