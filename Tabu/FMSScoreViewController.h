@@ -16,5 +16,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *taboosLabel;
 
 - (id)initWithScoreAndTaboos:(int)scoreResult :(int)taboosResult;
+- (IBAction)repeatGame;
+- (IBAction)backToWelcome;
 
 @end

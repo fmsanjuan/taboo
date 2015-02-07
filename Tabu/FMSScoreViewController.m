@@ -7,6 +7,8 @@
 //
 
 #import "FMSScoreViewController.h"
+#import "FMSPreQuickPlayViewController.h"
+#import "FMSWelcomeViewController.h"
 
 @interface FMSScoreViewController ()
 
@@ -41,6 +43,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)repeatGame {
+    FMSPreQuickPlayViewController *preQuickPlayViewController = [[FMSPreQuickPlayViewController alloc]init];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:preQuickPlayViewController];
+}
+
+- (IBAction)backToWelcome {
+    FMSWelcomeViewController *welcomeViewController = [[FMSWelcomeViewController alloc]init];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:welcomeViewController];
 }
 
 @end
