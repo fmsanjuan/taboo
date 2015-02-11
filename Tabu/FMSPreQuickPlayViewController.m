@@ -7,7 +7,7 @@
 //
 
 #import "FMSPreQuickPlayViewController.h"
-#import "FMSPlayViewController.h"
+#import "FMSCountdownViewController.h"
 
 @interface FMSPreQuickPlayViewController ()
 
@@ -25,9 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)startQuickGame {
-    FMSPlayViewController *playViewController = [[FMSPlayViewController alloc]init];
-    [[UIApplication sharedApplication].keyWindow setRootViewController:playViewController];
+- (IBAction)startCountdown {
+    FMSCountdownViewController *countdownViewController = [[FMSCountdownViewController alloc]init];
+    [[UIApplication sharedApplication].keyWindow setRootViewController:countdownViewController];
 }
 
 @end

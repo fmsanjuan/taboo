@@ -10,6 +10,6 @@
 
 @interface FMSPreQuickPlayViewController : UIViewController
 
-- (IBAction)startQuickGame;
+- (IBAction)startCountdown;
 
 @end

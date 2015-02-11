@@ -25,6 +25,8 @@
 		DCD173F31A83ED130099BFE9 /* taboo.db in Resources */ = {isa = PBXBuildFile; fileRef = DCD173F21A83ED130099BFE9 /* taboo.db */; };
 		DCD173F61A83FE960099BFE9 /* FMSTabooCard.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD173F51A83FE960099BFE9 /* FMSTabooCard.m */; };
 		DCD173F81A86369F0099BFE9 /* taboo.sql in Resources */ = {isa = PBXBuildFile; fileRef = DCD173F71A86369F0099BFE9 /* taboo.sql */; };
+		DCF814631A8BCB8500D1D14F /* FMSCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF814611A8BCB8500D1D14F /* FMSCountdownViewController.m */; };
+		DCF814641A8BCB8500D1D14F /* FMSCountdownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF814621A8BCB8500D1D14F /* FMSCountdownViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,9 @@
 		DCD173F41A83FE960099BFE9 /* FMSTabooCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSTabooCard.h; sourceTree = "<group>"; };
 		DCD173F51A83FE960099BFE9 /* FMSTabooCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSTabooCard.m; sourceTree = "<group>"; };
 		DCD173F71A86369F0099BFE9 /* taboo.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = taboo.sql; sourceTree = "<group>"; };
+		DCF814601A8BCB8500D1D14F /* FMSCountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSCountdownViewController.h; sourceTree = "<group>"; };
+		DCF814611A8BCB8500D1D14F /* FMSCountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSCountdownViewController.m; sourceTree = "<group>"; };
+		DCF814621A8BCB8500D1D14F /* FMSCountdownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSCountdownViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +121,9 @@
 				DC124FCC1A86833200083D12 /* FMSPreQuickPlayViewController.h */,
 				DC124FCD1A86833200083D12 /* FMSPreQuickPlayViewController.m */,
 				DC124FCE1A86833200083D12 /* FMSPreQuickPlayViewController.xib */,
+				DCF814601A8BCB8500D1D14F /* FMSCountdownViewController.h */,
+				DCF814611A8BCB8500D1D14F /* FMSCountdownViewController.m */,
+				DCF814621A8BCB8500D1D14F /* FMSCountdownViewController.xib */,
 				DC8BDD5B1A8648E500F7FF24 /* FMSPlayViewController.h */,
 				DC8BDD5C1A8648E500F7FF24 /* FMSPlayViewController.m */,
 				DC8BDD5D1A8648E500F7FF24 /* FMSPlayViewController.xib */,
@@ -245,6 +253,7 @@
 			files = (
 				DCD173EC1A7EA5350099BFE9 /* FMSScoreViewController.xib in Resources */,
 				DC124FD01A86833200083D12 /* FMSPreQuickPlayViewController.xib in Resources */,
+				DCF814641A8BCB8500D1D14F /* FMSCountdownViewController.xib in Resources */,
 				DCD173F81A86369F0099BFE9 /* taboo.sql in Resources */,
 				DCD173F31A83ED130099BFE9 /* taboo.db in Resources */,
 				DC8BDD5F1A8648E500F7FF24 /* FMSPlayViewController.xib in Resources */,
@@ -270,6 +279,7 @@
 			files = (
 				DC124FD41A86834200083D12 /* FMSWelcomeViewController.m in Sources */,
 				DCD173F61A83FE960099BFE9 /* FMSTabooCard.m in Sources */,
+				DCF814631A8BCB8500D1D14F /* FMSCountdownViewController.m in Sources */,
 				DCD173EB1A7EA5350099BFE9 /* FMSScoreViewController.m in Sources */,
 				DC124FCB1A86831400083D12 /* FMSTabooDBManager.m in Sources */,
 				DC8BDD5E1A8648E500F7FF24 /* FMSPlayViewController.m in Sources */,

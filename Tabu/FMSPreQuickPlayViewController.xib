@@ -33,7 +33,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="startQuickGame" destination="-1" eventType="touchDown" id="YcS-ft-UpZ"/>
+                        <action selector="startCountdown" destination="-1" eventType="touchDown" id="JQX-rQ-fmI"/>
                     </connections>
                 </button>
             </subviews>
