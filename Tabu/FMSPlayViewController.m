@@ -43,7 +43,7 @@ const double DEFAULT_TIME = 60.0;
     counter -= 1.0;
     if (counter < 0) {
         FMSScoreViewController *scoreViewController = [[FMSScoreViewController alloc]initWithScoreAndTaboos:score :taboos];
-        [[UIApplication sharedApplication].keyWindow setRootViewController:scoreViewController];
+        [self.navigationController pushViewController:scoreViewController animated:YES];
         [self.timer invalidate];
     } else {
         NSMutableString *timerLabelText = [[NSMutableString alloc]init];

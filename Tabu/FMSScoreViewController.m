@@ -47,12 +47,11 @@
 
 - (IBAction)repeatGame {
     FMSPreQuickPlayViewController *preQuickPlayViewController = [[FMSPreQuickPlayViewController alloc]init];
-    [[UIApplication sharedApplication].keyWindow setRootViewController:preQuickPlayViewController];
+    [self.navigationController pushViewController:preQuickPlayViewController animated:YES];
 }
 
 - (IBAction)backToWelcome {
-    FMSWelcomeViewController *welcomeViewController = [[FMSWelcomeViewController alloc]init];
-    [[UIApplication sharedApplication].keyWindow setRootViewController:welcomeViewController];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

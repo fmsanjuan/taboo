@@ -27,7 +27,7 @@
 
 - (IBAction)startCountdown {
     FMSCountdownViewController *countdownViewController = [[FMSCountdownViewController alloc]init];
-    [[UIApplication sharedApplication].keyWindow setRootViewController:countdownViewController];
+    [self.navigationController pushViewController:countdownViewController animated:YES];
 }
 
 @end

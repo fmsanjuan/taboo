@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -27,7 +28,7 @@
 
 - (IBAction)quickGame {
     FMSPreQuickPlayViewController *preQuickPlayViewController = [[FMSPreQuickPlayViewController alloc]init];
-    [[UIApplication sharedApplication].keyWindow setRootViewController:preQuickPlayViewController];
+    [self.navigationController pushViewController:preQuickPlayViewController animated:YES];
 }
 
 @end

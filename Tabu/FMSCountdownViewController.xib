@@ -42,7 +42,6 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="startCounter" destination="-1" eventType="touchDown" id="OSA-MH-406"/>
                         <action selector="startGame" destination="-1" eventType="touchDown" id="l6t-fj-w8y"/>
                     </connections>
                 </button>

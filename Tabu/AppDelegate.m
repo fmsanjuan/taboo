@@ -20,7 +20,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     FMSWelcomeViewController *welcomeViewController = [[FMSWelcomeViewController alloc]init];
-    self.window.rootViewController = welcomeViewController;
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:welcomeViewController];
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

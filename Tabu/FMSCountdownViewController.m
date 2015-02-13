@@ -48,13 +48,12 @@
 
 - (IBAction)startGame {
     FMSPlayViewController *playViewController = [[FMSPlayViewController alloc]init];
-    [[UIApplication sharedApplication].keyWindow setRootViewController:playViewController];
+    [self.navigationController pushViewController:playViewController animated:YES];
     [self.timer invalidate];
 }
 
 - (IBAction)cancelCountdown {
-    FMSPreQuickPlayViewController *preQuickPlayViewController = [[FMSPreQuickPlayViewController alloc]init];
-    [[UIApplication sharedApplication].keyWindow setRootViewController:preQuickPlayViewController];
+    [self.navigationController popViewControllerAnimated:YES];
     [self.timer invalidate];
 }
 
