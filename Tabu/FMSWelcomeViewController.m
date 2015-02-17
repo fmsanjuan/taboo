@@ -8,6 +8,7 @@
 
 #import "FMSWelcomeViewController.h"
 #import "FMSPreQuickPlayViewController.h"
+#import "FMSCustomGameViewController.h"
 
 @interface FMSWelcomeViewController ()
 
@@ -29,6 +30,11 @@
 - (IBAction)quickGame {
     FMSPreQuickPlayViewController *preQuickPlayViewController = [[FMSPreQuickPlayViewController alloc]init];
     [self.navigationController pushViewController:preQuickPlayViewController animated:YES];
+}
+
+- (IBAction)customGame {
+    FMSCustomGameViewController *customGameViewController = [[FMSCustomGameViewController alloc]init];
+    [self.navigationController pushViewController:customGameViewController animated:YES];
 }
 
 @end

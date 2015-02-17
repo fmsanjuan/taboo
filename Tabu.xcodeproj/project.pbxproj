@@ -12,6 +12,8 @@
 		DC124FD01A86833200083D12 /* FMSPreQuickPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC124FCE1A86833200083D12 /* FMSPreQuickPlayViewController.xib */; };
 		DC124FD41A86834200083D12 /* FMSWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC124FD21A86834200083D12 /* FMSWelcomeViewController.m */; };
 		DC124FD51A86834200083D12 /* FMSWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC124FD31A86834200083D12 /* FMSWelcomeViewController.xib */; };
+		DC5AF52A1A92503B009162DF /* FMSCustomGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AF5281A92503B009162DF /* FMSCustomGameViewController.m */; };
+		DC5AF52B1A92503B009162DF /* FMSCustomGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5AF5291A92503B009162DF /* FMSCustomGameViewController.xib */; };
 		DC7827A31A6C093D001D416A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7827A21A6C093D001D416A /* main.m */; };
 		DC7827A61A6C093D001D416A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7827A51A6C093D001D416A /* AppDelegate.m */; };
 		DC7827AE1A6C093D001D416A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7827AD1A6C093D001D416A /* Images.xcassets */; };
@@ -48,6 +50,9 @@
 		DC124FD11A86834200083D12 /* FMSWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSWelcomeViewController.h; sourceTree = "<group>"; };
 		DC124FD21A86834200083D12 /* FMSWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSWelcomeViewController.m; sourceTree = "<group>"; };
 		DC124FD31A86834200083D12 /* FMSWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSWelcomeViewController.xib; sourceTree = "<group>"; };
+		DC5AF5271A92503B009162DF /* FMSCustomGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSCustomGameViewController.h; sourceTree = "<group>"; };
+		DC5AF5281A92503B009162DF /* FMSCustomGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSCustomGameViewController.m; sourceTree = "<group>"; };
+		DC5AF5291A92503B009162DF /* FMSCustomGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSCustomGameViewController.xib; sourceTree = "<group>"; };
 		DC78279D1A6C093D001D416A /* Tabu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7827A11A6C093D001D416A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC7827A21A6C093D001D416A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,6 +142,9 @@
 				DC124FD11A86834200083D12 /* FMSWelcomeViewController.h */,
 				DC124FD21A86834200083D12 /* FMSWelcomeViewController.m */,
 				DC124FD31A86834200083D12 /* FMSWelcomeViewController.xib */,
+				DC5AF5271A92503B009162DF /* FMSCustomGameViewController.h */,
+				DC5AF5281A92503B009162DF /* FMSCustomGameViewController.m */,
+				DC5AF5291A92503B009162DF /* FMSCustomGameViewController.xib */,
 				DC7827AD1A6C093D001D416A /* Images.xcassets */,
 				DC7827A01A6C093D001D416A /* Supporting Files */,
 				DCD173F21A83ED130099BFE9 /* taboo.db */,
@@ -255,6 +263,7 @@
 				DC124FD01A86833200083D12 /* FMSPreQuickPlayViewController.xib in Resources */,
 				DCF814641A8BCB8500D1D14F /* FMSCountdownViewController.xib in Resources */,
 				DCD173F81A86369F0099BFE9 /* taboo.sql in Resources */,
+				DC5AF52B1A92503B009162DF /* FMSCustomGameViewController.xib in Resources */,
 				DCD173F31A83ED130099BFE9 /* taboo.db in Resources */,
 				DC8BDD5F1A8648E500F7FF24 /* FMSPlayViewController.xib in Resources */,
 				DC8BDD6B1A8676B900F7FF24 /* Default-568h@2x.png in Resources */,
@@ -281,6 +290,7 @@
 				DCD173F61A83FE960099BFE9 /* FMSTabooCard.m in Sources */,
 				DCF814631A8BCB8500D1D14F /* FMSCountdownViewController.m in Sources */,
 				DCD173EB1A7EA5350099BFE9 /* FMSScoreViewController.m in Sources */,
+				DC5AF52A1A92503B009162DF /* FMSCustomGameViewController.m in Sources */,
 				DC124FCB1A86831400083D12 /* FMSTabooDBManager.m in Sources */,
 				DC8BDD5E1A8648E500F7FF24 /* FMSPlayViewController.m in Sources */,
 				DC7827A61A6C093D001D416A /* AppDelegate.m in Sources */,

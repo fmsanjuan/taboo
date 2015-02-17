@@ -11,5 +11,6 @@
 @interface FMSWelcomeViewController : UIViewController
 
 - (IBAction)quickGame;
+- (IBAction)customGame;
 
 @end
