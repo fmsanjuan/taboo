@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FMSCustomGame.h"
 
 @interface FMSCustomGameViewController : UIViewController
 
@@ -18,6 +19,7 @@
 @property (nonatomic, weak) IBOutlet UITextField *team3Name;
 @property (nonatomic, weak) IBOutlet UILabel *team4Label;
 @property (nonatomic, weak) IBOutlet UITextField *team4Name;
+@property (nonatomic, retain) FMSCustomGame *customGame;
 
 - (IBAction)teamValueChanged: (id)sender;
 - (IBAction)roundValueChanged: (id)sender;

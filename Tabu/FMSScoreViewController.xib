@@ -6,6 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMSScoreViewController">
             <connections>
+                <outlet property="goBackButton" destination="YVL-6n-lgs" id="98j-AG-OY3"/>
+                <outlet property="nextRoundButton" destination="TfV-z7-AoL" id="O4y-VO-Iwa"/>
+                <outlet property="nextTeamLabel" destination="Joo-R9-TLm" id="XQJ-Sc-up3"/>
+                <outlet property="repeatButton" destination="jf8-WA-gvA" id="Gce-v6-1ae"/>
                 <outlet property="scoreLabel" destination="1DJ-4S-fMg" id="zHB-Pl-Gtz"/>
                 <outlet property="taboosLabel" destination="pdE-G4-d3z" id="XLe-KI-w1c"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -60,6 +64,22 @@
                         <action selector="repeatGame" destination="-1" eventType="touchDown" id="kJz-Qy-9mx"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfV-z7-AoL">
+                    <rect key="frame" x="8" y="478" width="304" height="46"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <state key="normal" title="Siguiente ronda">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextRound" destination="-1" eventType="touchDown" id="Xex-82-T96"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Siguiente equipo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joo-R9-TLm">
+                    <rect key="frame" x="8" y="435" width="304" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

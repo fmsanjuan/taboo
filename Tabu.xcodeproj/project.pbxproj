@@ -21,6 +21,7 @@
 		DC8BDD5E1A8648E500F7FF24 /* FMSPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8BDD5C1A8648E500F7FF24 /* FMSPlayViewController.m */; };
 		DC8BDD5F1A8648E500F7FF24 /* FMSPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8BDD5D1A8648E500F7FF24 /* FMSPlayViewController.xib */; };
 		DC8BDD6B1A8676B900F7FF24 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC8BDD6A1A8676B900F7FF24 /* Default-568h@2x.png */; };
+		DCA142BF1A965AA800C8826C /* FMSCustomGame.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA142BE1A965AA800C8826C /* FMSCustomGame.m */; };
 		DCD173EB1A7EA5350099BFE9 /* FMSScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD173E91A7EA5350099BFE9 /* FMSScoreViewController.m */; };
 		DCD173EC1A7EA5350099BFE9 /* FMSScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD173EA1A7EA5350099BFE9 /* FMSScoreViewController.xib */; };
 		DCD173EE1A83E5AA0099BFE9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD173ED1A83E5AA0099BFE9 /* libsqlite3.dylib */; };
@@ -66,6 +67,8 @@
 		DC8BDD5C1A8648E500F7FF24 /* FMSPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSPlayViewController.m; sourceTree = "<group>"; };
 		DC8BDD5D1A8648E500F7FF24 /* FMSPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSPlayViewController.xib; sourceTree = "<group>"; };
 		DC8BDD6A1A8676B900F7FF24 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DCA142BD1A965AA800C8826C /* FMSCustomGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSCustomGame.h; sourceTree = "<group>"; };
+		DCA142BE1A965AA800C8826C /* FMSCustomGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSCustomGame.m; sourceTree = "<group>"; };
 		DCD173E81A7EA5350099BFE9 /* FMSScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSScoreViewController.h; sourceTree = "<group>"; };
 		DCD173E91A7EA5350099BFE9 /* FMSScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSScoreViewController.m; sourceTree = "<group>"; };
 		DCD173EA1A7EA5350099BFE9 /* FMSScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSScoreViewController.xib; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				DC124FCA1A86831400083D12 /* FMSTabooDBManager.m */,
 				DCD173F41A83FE960099BFE9 /* FMSTabooCard.h */,
 				DCD173F51A83FE960099BFE9 /* FMSTabooCard.m */,
+				DCA142BD1A965AA800C8826C /* FMSCustomGame.h */,
+				DCA142BE1A965AA800C8826C /* FMSCustomGame.m */,
 				DC124FD11A86834200083D12 /* FMSWelcomeViewController.h */,
 				DC124FD21A86834200083D12 /* FMSWelcomeViewController.m */,
 				DC124FD31A86834200083D12 /* FMSWelcomeViewController.xib */,
@@ -294,6 +299,7 @@
 				DC124FCB1A86831400083D12 /* FMSTabooDBManager.m in Sources */,
 				DC8BDD5E1A8648E500F7FF24 /* FMSPlayViewController.m in Sources */,
 				DC7827A61A6C093D001D416A /* AppDelegate.m in Sources */,
+				DCA142BF1A965AA800C8826C /* FMSCustomGame.m in Sources */,
 				DC7827A31A6C093D001D416A /* main.m in Sources */,
 				DC124FCF1A86833200083D12 /* FMSPreQuickPlayViewController.m in Sources */,
 			);

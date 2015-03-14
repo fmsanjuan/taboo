@@ -7,6 +7,7 @@
 //
 
 #import "FMSCustomGameViewController.h"
+#import "FMSCountdownViewController.h"
 
 @interface FMSCustomGameViewController ()
 
@@ -22,10 +23,12 @@
 @synthesize team4Name;
 @synthesize roundsLabel;
 @synthesize timeLabel;
+@synthesize customGame;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    customGame = [[FMSCustomGame alloc]initEmptyCustomGame];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,20 +53,34 @@
         [team4Label setHidden:YES];
         [team4Name setHidden:YES];
     }
+    customGame.teams = teamStepper.value;
 }
 
 - (IBAction)roundValueChanged: (UIStepper *)roundStepper {
     roundsLabel.text = [[NSNumber numberWithDouble:roundStepper.value] stringValue];
+    customGame.rounds = roundStepper.value;
 }
 
 - (IBAction)timeSliderValueChanged:(UISlider *)timeSlider {
     NSMutableString *timeLabelText = [[NSMutableString alloc]initWithString:[[NSNumber numberWithDouble:timeSlider.value] stringValue]];
     [timeLabelText appendString:@"''"];
     timeLabel.text = timeLabelText;
+    customGame.time = timeSlider.value;
 }
 
 - (IBAction)startGame {
-    // TODO
+    customGame.teamNames = [NSMutableArray arrayWithObjects:team1Name.text, team2Name.text, nil];
+    [customGame fillScoresAndTaboos];
+    
+    if (customGame.teams == 3) {
+        [customGame.teamNames addObject:team3Name.text];
+    } else if (customGame.teams == 4) {
+        [customGame.teamNames addObject:team3Name.text];
+        [customGame.teamNames addObject:team4Name.text];
+    }
+    
+    FMSCountdownViewController *countdownViewController = [[FMSCountdownViewController alloc]initWithCustomeGameValues:customGame];
+    [self.navigationController pushViewController:countdownViewController animated:YES];
 }
 
 - (IBAction)goBack {

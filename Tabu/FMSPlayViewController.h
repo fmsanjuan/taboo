@@ -8,16 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "FMSTabooDBManager.h"
+#import "FMSCustomGame.h"
 
 @interface FMSPlayViewController : UIViewController
 
 @property (nonatomic, weak) NSTimer *timer;
 @property (nonatomic) float counter;
-@property (nonatomic) int score;
-@property (nonatomic) int taboos;
 @property (nonatomic) int cardCounter;
 @property (nonatomic) int cardCount;
 @property (nonatomic) FMSTabooDBManager *db;
+
+// Game settings
+@property (nonatomic, retain) FMSCustomGame *customGame;
 
 // View components
 @property (nonatomic, strong) IBOutlet UIProgressView *progressView;
@@ -31,5 +33,9 @@
 @property (nonatomic, strong) UISwipeGestureRecognizer *passCardGestureRecognizer;
 
 extern const double DEFAULT_TIME;
+
+- (id)initWithCustomGame:(FMSCustomGame *)gameConfig;
+
+- (void) setTimerLabelCurrentTime:(int)currentTime;
 
 @end

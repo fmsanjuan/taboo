@@ -19,6 +19,15 @@
 @synthesize countdown;
 @synthesize countdownLabel;
 @synthesize timer;
+@synthesize customGame;
+
+- (id)initWithCustomeGameValues:(FMSCustomGame*)gameConfig {
+    self = [super initWithNibName:@"FMSCountdownViewController" bundle:nil];
+    if (self) {
+        customGame = gameConfig;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,14 +56,14 @@
 }
 
 - (IBAction)startGame {
-    FMSPlayViewController *playViewController = [[FMSPlayViewController alloc]init];
+    FMSPlayViewController *playViewController = [[FMSPlayViewController alloc]initWithCustomGame:customGame];
     [self.navigationController pushViewController:playViewController animated:YES];
-    [self.timer invalidate];
+    [timer invalidate];
 }
 
 - (IBAction)cancelCountdown {
     [self.navigationController popViewControllerAnimated:YES];
-    [self.timer invalidate];
+    [timer invalidate];
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "FMSScoreViewController.h"
 #import "FMSPreQuickPlayViewController.h"
 #import "FMSWelcomeViewController.h"
+#import "FMSCountdownViewController.h"
 
 @interface FMSScoreViewController ()
 
@@ -17,15 +18,19 @@
 @implementation FMSScoreViewController
 
 @synthesize scoreLabel;
-@synthesize score;
-@synthesize taboos;
 @synthesize taboosLabel;
+@synthesize goBackButton;
+@synthesize nextRoundButton;
+@synthesize repeatButton;
+@synthesize nextTeamLabel;
+// Game settings
+@synthesize customGame;
 
-- (id)initWithScoreAndTaboos:(int)scoreResult :(int)taboosResult {
+- (id)initWithCustomGameConf:(FMSCustomGame *)gameConf {
     self = [super initWithNibName:@"FMSScoreViewController" bundle:nil];
     if (self) {
-        score = scoreResult;
-        taboos = taboosResult;
+        customGame = gameConf;
+        // TODO: Scores y taboos vienen vacios, comprobar el código del playcontroller.
     }
     return self;
 }
@@ -33,11 +38,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    scoreLabel.text = [[NSNumber numberWithInt:score]stringValue];
+    if (customGame.teams > 1) {
+        [repeatButton setHidden:YES];
+        [goBackButton setHidden:YES];
+        nextTeamLabel.text = [customGame getTeamName:customGame.currentTeam];
+    } else {
+        [nextTeamLabel setHidden:YES];
+        [nextRoundButton setHidden:YES];
+    }
+    if (customGame.teams <= 1 && [customGame isLastRound]) {
+        nextRoundButton.titleLabel.text = @"Volver a inicio";
+    }
+    scoreLabel.text = [[NSNumber numberWithInt:[customGame getTeamScore:customGame.currentTeam]]stringValue];
     NSMutableString *taboosLabelText = [[NSMutableString alloc]init];
-    [taboosLabelText appendString:[[NSNumber numberWithInt:taboos]stringValue]];
+    [taboosLabelText appendString:[[NSNumber numberWithInt:[customGame getTeamTaboos:customGame.currentTeam]]stringValue]];
     [taboosLabelText appendString:@" tabús"];
     taboosLabel.text = taboosLabelText;
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +69,16 @@
 
 - (IBAction)backToWelcome {
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+- (IBAction)nextRound {
+    [customGame nextTeam];
+    if ([customGame isLastRound]) {
+        [self backToWelcome];
+    } else {
+        FMSCountdownViewController *countdownViewController = [[FMSCountdownViewController alloc]initWithCustomeGameValues:customGame];
+        [self.navigationController pushViewController:countdownViewController animated:YES];
+    }
 }
 
 @end

@@ -26,7 +26,8 @@
 }
 
 - (IBAction)startCountdown {
-    FMSCountdownViewController *countdownViewController = [[FMSCountdownViewController alloc]init];
+    FMSCustomGame *customGame = [[FMSCustomGame alloc]initQuickGameConf];
+    FMSCountdownViewController *countdownViewController = [[FMSCountdownViewController alloc]initWithCustomeGameValues:customGame];
     [self.navigationController pushViewController:countdownViewController animated:YES];
 }
 

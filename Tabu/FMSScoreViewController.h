@@ -7,15 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FMSCustomGame.h"
 
 @interface FMSScoreViewController : UIViewController
 
-@property (nonatomic) int score;
-@property (nonatomic) int taboos;
-@property (retain, nonatomic) IBOutlet UILabel *scoreLabel;
-@property (retain, nonatomic) IBOutlet UILabel *taboosLabel;
+@property (nonatomic, weak) IBOutlet UILabel *scoreLabel;
+@property (nonatomic, weak) IBOutlet UILabel *taboosLabel;
+@property (nonatomic, weak) IBOutlet UILabel *nextTeamLabel;
+@property (nonatomic, weak) IBOutlet UIButton *repeatButton;
+@property (nonatomic, weak) IBOutlet UIButton *goBackButton;
+@property (nonatomic, weak) IBOutlet UIButton *nextRoundButton;
+// Game settings
+@property (nonatomic, strong) FMSCustomGame *customGame;
 
-- (id)initWithScoreAndTaboos:(int)scoreResult :(int)taboosResult;
+- (id)initWithCustomGameConf:(FMSCustomGame *)gameConf;
 - (IBAction)repeatGame;
 - (IBAction)backToWelcome;
 
