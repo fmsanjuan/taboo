@@ -49,12 +49,25 @@
     if (customGame.teams <= 1 && [customGame isLastRound]) {
         nextRoundButton.titleLabel.text = @"Volver a inicio";
     }
-    scoreLabel.text = [[NSNumber numberWithInt:[customGame getTeamScore:customGame.currentTeam]]stringValue];
+    scoreLabel.text = [self getScoreLabelText];
+    // Taboo label text concatenation
+    taboosLabel.text = [self getTabooLabelText];
+}
+
+- (NSMutableString *)getScoreLabelText {
+    // Score label text concatenation
+    NSMutableString *scoreLabelText = [[NSMutableString alloc]init];
+    [scoreLabelText appendString:[[NSNumber numberWithInt:[customGame getTeamScore:customGame.currentTeam]]stringValue]];
+    [scoreLabelText appendString:@" aciertos"];
+    return scoreLabelText;
+}
+
+- (NSMutableString *)getTabooLabelText {
+    // Taboo label text concatenation
     NSMutableString *taboosLabelText = [[NSMutableString alloc]init];
     [taboosLabelText appendString:[[NSNumber numberWithInt:[customGame getTeamTaboos:customGame.currentTeam]]stringValue]];
     [taboosLabelText appendString:@" tabús"];
-    taboosLabel.text = taboosLabelText;
-
+    return taboosLabelText;
 }
 
 - (void)didReceiveMemoryWarning {
