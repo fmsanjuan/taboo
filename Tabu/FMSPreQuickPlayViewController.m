@@ -31,4 +31,9 @@
     [self.navigationController pushViewController:countdownViewController animated:YES];
 }
 
+- (IBAction)goBack {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
 @end
