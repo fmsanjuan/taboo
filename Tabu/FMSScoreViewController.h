@@ -17,11 +17,13 @@
 @property (nonatomic, weak) IBOutlet UIButton *repeatButton;
 @property (nonatomic, weak) IBOutlet UIButton *goBackButton;
 @property (nonatomic, weak) IBOutlet UIButton *nextRoundButton;
+@property (nonatomic, weak) IBOutlet UIButton *finalResultsButton;
 // Game settings
 @property (nonatomic, strong) FMSCustomGame *customGame;
 
 - (id)initWithCustomGameConf:(FMSCustomGame *)gameConf;
 - (IBAction)repeatGame;
 - (IBAction)backToWelcome;
+- (IBAction)toFinalResults;
 
 @end

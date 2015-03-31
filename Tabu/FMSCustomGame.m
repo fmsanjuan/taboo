@@ -88,9 +88,17 @@
 }
 
 - (BOOL) isLastRound {
-    return currentRound >= rounds && currentTeam == 0;
+    return currentRound >= rounds-1 && currentTeam >= teams-1;
 }
 
-
+- (int) getWinnerTeam {
+    int winnerIndex = 0;
+    for (int i = 1; i < teams; i++) {
+        if ([[self.teamScores objectAtIndex:i]intValue] > [[teamScores objectAtIndex:winnerIndex]intValue]) {
+            winnerIndex = i;
+        }
+    }
+    return winnerIndex;
+}
 
 @end

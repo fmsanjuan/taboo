@@ -10,6 +10,7 @@
 #import "FMSPreQuickPlayViewController.h"
 #import "FMSWelcomeViewController.h"
 #import "FMSCountdownViewController.h"
+#import "FMSScoreTableViewController.h"
 
 @interface FMSScoreViewController ()
 
@@ -23,6 +24,7 @@
 @synthesize nextRoundButton;
 @synthesize repeatButton;
 @synthesize nextTeamLabel;
+@synthesize finalResultsButton;
 // Game settings
 @synthesize customGame;
 
@@ -30,7 +32,6 @@
     self = [super initWithNibName:@"FMSScoreViewController" bundle:nil];
     if (self) {
         customGame = gameConf;
-        // TODO: Scores y taboos vienen vacios, comprobar el código del playcontroller.
     }
     return self;
 }
@@ -46,8 +47,10 @@
         [nextTeamLabel setHidden:YES];
         [nextRoundButton setHidden:YES];
     }
-    if (customGame.teams <= 1 && [customGame isLastRound]) {
-        nextRoundButton.titleLabel.text = @"Volver a inicio";
+    if ([customGame isLastRound]) {
+        [nextRoundButton setHidden:YES];
+    } else {
+        [finalResultsButton setHidden:YES];
     }
     scoreLabel.text = [self getScoreLabelText];
     // Taboo label text concatenation
@@ -86,12 +89,13 @@
 
 - (IBAction)nextRound {
     [customGame nextTeam];
-    if ([customGame isLastRound]) {
-        [self backToWelcome];
-    } else {
-        FMSCountdownViewController *countdownViewController = [[FMSCountdownViewController alloc]initWithCustomeGameValues:customGame];
-        [self.navigationController pushViewController:countdownViewController animated:YES];
-    }
+    FMSCountdownViewController *countdownViewController = [[FMSCountdownViewController alloc]initWithCustomeGameValues:customGame];
+    [self.navigationController pushViewController:countdownViewController animated:YES];
+}
+
+- (IBAction)toFinalResults {
+    FMSScoreTableViewController *scoreTableViewController = [[FMSScoreTableViewController alloc]initWithCustomGameConf:customGame];
+    [self.navigationController pushViewController:scoreTableViewController animated:YES];
 }
 
 @end

@@ -32,5 +32,6 @@
 - (void)nextTeam;
 - (BOOL)isLastRound;
 - (void)fillScoresAndTaboos;
+- (int) getWinnerTeam;
 
 @end
