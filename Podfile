@@ -3,6 +3,7 @@ platform :ios, '8.2'
 
 target 'Tabu' do
 #pod 'MGBoxKit'
+pod 'FMDB'
 end
 
 target 'TabuTests' do

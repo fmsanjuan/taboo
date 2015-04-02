@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50145207553B3ADBBC2FCED /* libPods-Tabu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B33D53619B89B1D30687C3 /* libPods-Tabu.a */; };
 		DC1205C91AC872BA00302F0D /* FMSScoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1205C71AC872BA00302F0D /* FMSScoreTableViewController.m */; };
 		DC1205CA1AC872BA00302F0D /* FMSScoreTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1205C81AC872BA00302F0D /* FMSScoreTableViewController.xib */; };
 		DC124FCB1A86831400083D12 /* FMSTabooDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DC124FCA1A86831400083D12 /* FMSTabooDBManager.m */; };
@@ -26,7 +27,6 @@
 		DCA142BF1A965AA800C8826C /* FMSCustomGame.m in Sources */ = {isa = PBXBuildFile; fileRef = DCA142BE1A965AA800C8826C /* FMSCustomGame.m */; };
 		DCD173EB1A7EA5350099BFE9 /* FMSScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD173E91A7EA5350099BFE9 /* FMSScoreViewController.m */; };
 		DCD173EC1A7EA5350099BFE9 /* FMSScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCD173EA1A7EA5350099BFE9 /* FMSScoreViewController.xib */; };
-		DCD173EE1A83E5AA0099BFE9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD173ED1A83E5AA0099BFE9 /* libsqlite3.dylib */; };
 		DCD173F31A83ED130099BFE9 /* taboo.db in Resources */ = {isa = PBXBuildFile; fileRef = DCD173F21A83ED130099BFE9 /* taboo.db */; };
 		DCD173F61A83FE960099BFE9 /* FMSTabooCard.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD173F51A83FE960099BFE9 /* FMSTabooCard.m */; };
 		DCD173F81A86369F0099BFE9 /* taboo.sql in Resources */ = {isa = PBXBuildFile; fileRef = DCD173F71A86369F0099BFE9 /* taboo.sql */; };
@@ -45,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50B33D53619B89B1D30687C3 /* libPods-Tabu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tabu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53D3F141EE7207CBF9BD626 /* Pods-Tabu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tabu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tabu/Pods-Tabu.release.xcconfig"; sourceTree = "<group>"; };
 		DC1205C61AC872BA00302F0D /* FMSScoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSScoreTableViewController.h; sourceTree = "<group>"; };
 		DC1205C71AC872BA00302F0D /* FMSScoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSScoreTableViewController.m; sourceTree = "<group>"; };
 		DC1205C81AC872BA00302F0D /* FMSScoreTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSScoreTableViewController.xib; sourceTree = "<group>"; };
@@ -77,7 +79,6 @@
 		DCD173E81A7EA5350099BFE9 /* FMSScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSScoreViewController.h; sourceTree = "<group>"; };
 		DCD173E91A7EA5350099BFE9 /* FMSScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSScoreViewController.m; sourceTree = "<group>"; };
 		DCD173EA1A7EA5350099BFE9 /* FMSScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSScoreViewController.xib; sourceTree = "<group>"; };
-		DCD173ED1A83E5AA0099BFE9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		DCD173F21A83ED130099BFE9 /* taboo.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = taboo.db; sourceTree = "<group>"; };
 		DCD173F41A83FE960099BFE9 /* FMSTabooCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSTabooCard.h; sourceTree = "<group>"; };
 		DCD173F51A83FE960099BFE9 /* FMSTabooCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSTabooCard.m; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		DCF814601A8BCB8500D1D14F /* FMSCountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSCountdownViewController.h; sourceTree = "<group>"; };
 		DCF814611A8BCB8500D1D14F /* FMSCountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSCountdownViewController.m; sourceTree = "<group>"; };
 		DCF814621A8BCB8500D1D14F /* FMSCountdownViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMSCountdownViewController.xib; sourceTree = "<group>"; };
+		F0013DC152C0B3DD4A6D8D09 /* Pods-Tabu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tabu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tabu/Pods-Tabu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD173EE1A83E5AA0099BFE9 /* libsqlite3.dylib in Frameworks */,
+				A50145207553B3ADBBC2FCED /* libPods-Tabu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,14 +108,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		095B680B21296A9059DB236A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0013DC152C0B3DD4A6D8D09 /* Pods-Tabu.debug.xcconfig */,
+				D53D3F141EE7207CBF9BD626 /* Pods-Tabu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		59DEBB917F3268C95AE70EFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50B33D53619B89B1D30687C3 /* libPods-Tabu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC7827941A6C093D001D416A = {
 			isa = PBXGroup;
 			children = (
 				DC8BDD6A1A8676B900F7FF24 /* Default-568h@2x.png */,
-				DCD173ED1A83E5AA0099BFE9 /* libsqlite3.dylib */,
 				DC78279F1A6C093D001D416A /* Tabu */,
 				DC7827B91A6C093D001D416A /* TabuTests */,
 				DC78279E1A6C093D001D416A /* Products */,
+				095B680B21296A9059DB236A /* Pods */,
+				59DEBB917F3268C95AE70EFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC7827C01A6C093D001D416A /* Build configuration list for PBXNativeTarget "Tabu" */;
 			buildPhases = (
+				A4B5A3AD76AB81079700B301 /* Check Pods Manifest.lock */,
 				DC7827991A6C093D001D416A /* Sources */,
 				DC78279A1A6C093D001D416A /* Frameworks */,
 				DC78279B1A6C093D001D416A /* Resources */,
+				2DB45F9B3C321F012C97047E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,6 +316,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DB45F9B3C321F012C97047E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tabu/Pods-Tabu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B5A3AD76AB81079700B301 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DC7827991A6C093D001D416A /* Sources */ = {
@@ -412,6 +467,7 @@
 		};
 		DC7827C11A6C093D001D416A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0013DC152C0B3DD4A6D8D09 /* Pods-Tabu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tabu/Info.plist;
@@ -422,6 +478,7 @@
 		};
 		DC7827C21A6C093D001D416A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53D3F141EE7207CBF9BD626 /* Pods-Tabu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tabu/Info.plist;

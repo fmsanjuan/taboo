@@ -7,17 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <sqlite3.h>
 #import "FMSTabooCard.h"
+#import <FMDatabase.h>
+#import <FMResultSet.h>
 
 @interface FMSTabooDBManager : NSObject
 
-@property (nonatomic) NSString *dbPath;
+@property (nonatomic) FMDatabase *db;
 
 + (FMSTabooDBManager*)getSharedInstance;
 - (BOOL)connectDB;
+- (BOOL)closeDB;
 - (FMSTabooCard*) findTabooCardById:(int)cardId;
 - (int) getCardsCount;
 - (NSString*)getDatabasePath;
+- (FMSTabooCard*)resultSetRowToCard:(FMResultSet *)rs;
 
 @end

@@ -49,9 +49,10 @@ const double DEFAULT_TIME = 60.0;
     // decrement timer 1 … this is your UI, tick down and redraw
     counter -= 1.0;
     if (counter < 0) {
+        [db closeDB];
+        [self.timer invalidate];
         FMSScoreViewController *scoreViewController = [[FMSScoreViewController alloc]initWithCustomGameConf:customGame];
         [self.navigationController pushViewController:scoreViewController animated:YES];
-        [self.timer invalidate];
     } else {
         [self setTimerLabelCurrentTime:counter];
         [progressView setProgress:counter/[time doubleValue] animated:YES];
