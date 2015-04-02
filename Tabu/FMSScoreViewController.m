@@ -47,7 +47,10 @@
         [nextTeamLabel setHidden:YES];
         [nextRoundButton setHidden:YES];
     }
-    if ([customGame isLastRound]) {
+    if (customGame.teams == 1 && [customGame isLastRound]) {
+        [nextRoundButton setHidden:YES];
+        [finalResultsButton setHidden:YES];
+    } else if ([customGame isLastRound]) {
         [nextRoundButton setHidden:YES];
     } else {
         [finalResultsButton setHidden:YES];

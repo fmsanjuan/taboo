@@ -18,8 +18,8 @@ static FMSTabooDBManager *sharedInstance = nil;
 + (FMSTabooDBManager*)getSharedInstance{
     if (!sharedInstance) {
         sharedInstance = [[super allocWithZone:NULL]init];
-        [sharedInstance connectDB];
     }
+    [sharedInstance connectDB];
     return sharedInstance;
 }
 
